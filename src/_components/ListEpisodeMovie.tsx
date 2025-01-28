@@ -43,7 +43,7 @@ export function ListEpisodeMovie({
         className={`pb-2 ${
           episodes[0].items.length < 30
             ? "flex gap-6 overflow-x-scroll"
-            : "grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] gap-6"
+            : "grid md:grid-cols-[repeat(auto-fill,minmax(80px,1fr))] grid-cols-[repeat(auto-fill,minmax(52px,1fr))] md:gap-6 gap-4"
         }`}
       >
         {episodes[0].items.length < 30
